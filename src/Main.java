@@ -6,6 +6,6 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Pessoa> pessoas = new ArrayList<>();
 
-
+        System.out.println("Teste");
     }
 }
