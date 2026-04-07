@@ -25,7 +25,7 @@ public class Vendedor extends Empregado{
     }
 
     @Override
-    public double cacularSalario() {
-        return super.cacularSalario() + comissao;
+    public double calcularSalario() {
+        return super.calcularSalario() + comissao;
     }
 }
