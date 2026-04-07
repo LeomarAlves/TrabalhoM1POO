@@ -1,6 +1,6 @@
 public class Vendedor extends Empregado{
-    public double valorVendas;
-    public double comissao;
+    private double valorVendas;
+    private double comissao;
 
     public Vendedor(String nome, int telefone, int contador, int codigoSetor, double salarioBase, double imposto, double valorVendas, double comissao) {
         super(nome, telefone, contador, codigoSetor, salarioBase, imposto);

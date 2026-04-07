@@ -1,6 +1,6 @@
 public class Operario extends Empregado {
-    double valorHoraExtra;
-    int horasExtras;
+    private double valorHoraExtra;
+    private int horasExtras;
 
     public Operario(String nome, int telefone, int contador, int codigoSetor, double salarioBase, double imposto, double valorHoraExtra, int horasExtras) {
         super(nome, telefone, contador, codigoSetor, salarioBase, imposto);
@@ -25,7 +25,7 @@ public class Operario extends Empregado {
     }
 
     @Override
-    public double cacularSalario() {
-        return super.cacularSalario() + (horasExtras*valorHoraExtra);
+    public double calcularSalario() {
+        return super.calcularSalario() + (valorHoraExtra * horasExtras);
     }
 }

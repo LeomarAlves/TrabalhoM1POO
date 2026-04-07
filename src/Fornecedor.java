@@ -1,6 +1,6 @@
 public class Fornecedor extends Pessoa{
-    public float valorDivida;
-    public float valorCredito;
+    private float valorDivida;
+    private float valorCredito;
 
     public Fornecedor(String nome, int telefone, int contador, float valorDivida, float valorCredito){
         super(nome, telefone, contador);
