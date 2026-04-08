@@ -1,12 +1,12 @@
 public abstract class Pessoa {
     private String nome;
     private int telefone;
-    private int contador;
+    private static int contador;
 
-    public Pessoa (String nome, int telefone, int contador){
+    public Pessoa (String nome, int telefone){
         this.nome = nome;
         this.telefone = telefone;
-        this.contador++;
+        contador++;
     }
 
     public int getContador() {

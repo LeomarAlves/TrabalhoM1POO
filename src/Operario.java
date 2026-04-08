@@ -2,8 +2,8 @@ public class Operario extends Empregado {
     private double valorHoraExtra;
     private int horasExtras;
 
-    public Operario(String nome, int telefone, int contador, int codigoSetor, double salarioBase, double imposto, double valorHoraExtra, int horasExtras) {
-        super(nome, telefone, contador, codigoSetor, salarioBase, imposto);
+    public Operario(String nome, int telefone, int codigoSetor, double salarioBase, double imposto, double valorHoraExtra, int horasExtras) {
+        super(nome, telefone, codigoSetor, salarioBase, imposto);
         this.valorHoraExtra = valorHoraExtra;
         this.horasExtras = horasExtras;
     }

@@ -1,10 +1,10 @@
-public class Empregado extends Pessoa{
+public abstract class Empregado extends Pessoa{
     private int codigoSetor;
     private double salarioBase;
     private double imposto;
 
-    public Empregado(String nome, int telefone, int contador, int codigoSetor, double salarioBase, double imposto){
-        super(nome, telefone, contador);
+    public Empregado(String nome, int telefone, int codigoSetor, double salarioBase, double imposto){
+        super(nome, telefone);
         this.codigoSetor = codigoSetor;
         this.salarioBase = salarioBase;
         this.imposto = imposto;
