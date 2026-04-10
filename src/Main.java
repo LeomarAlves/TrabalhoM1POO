@@ -1,3 +1,5 @@
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -52,8 +54,20 @@ public class Main {
                             String nomeO = input.nextLine();
                             System.out.print("Telefone: ");
                             int telO = input.nextInt();
-                            System.out.print("Código do Setor: ");
+                            System.out.print("Código de Setor: ");
                             int codO = input.nextInt();
+                            System.out.print("Salário Base: ");
+                            double salO = input.nextDouble();
+                            System.out.print("Taxa de imposto: ");
+                            double impO = input.nextDouble();
+                            System.out.println("Valor hora extra: ");
+                            double valorHoraO = input.nextDouble();
+                            System.out.println("Total de horas extras: ");
+                            int horaO = input.nextInt();
+                            input.nextLine();
+
+                            Operario operario = new Operario(nomeO, telO, codO, salO, impO, valorHoraO, horaO);
+
                         } else if (tipoEmpregado == 2) {
                             // Lógica para criar Vendedor
                         } else {
