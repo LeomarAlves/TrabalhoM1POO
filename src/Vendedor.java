@@ -26,6 +26,6 @@ public class Vendedor extends Empregado{
 
     @Override
     public double calcularSalario() {
-        return super.calcularSalario() + comissao;
+        return super.calcularSalario() + (this.valorVendas * (this.comissao/100.0));
     }
 }

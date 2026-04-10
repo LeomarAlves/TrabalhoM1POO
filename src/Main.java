@@ -68,8 +68,29 @@ public class Main {
 
                             Operario operario = new Operario(nomeO, telO, codO, salO, impO, valorHoraO, horaO);
 
+                            System.out.println("Novo Operário Cadastrado com Sucesso!");
+
                         } else if (tipoEmpregado == 2) {
-                            // Lógica para criar Vendedor
+                            System.out.println("\n--- Cadastrar novo Vendedor ---");
+                            System.out.print("Nome: ");
+                            String nomeV = input.nextLine();
+                            System.out.print("Telefone: ");
+                            int telV = input.nextInt();
+                            System.out.print("Código de Setor: ");
+                            int codV = input.nextInt();
+                            System.out.print("Salário Base: ");
+                            double salV = input.nextDouble();
+                            System.out.print("Taxa de imposto: ");
+                            double impV = input.nextDouble();
+                            System.out.print("Valor total de vendas: ");
+                            double valVen = input.nextDouble();
+                            System.out.print("Porcentagem comissão: ");
+                            double comi = input.nextDouble();
+
+                            Vendedor vendedor = new Vendedor(nomeV, telV, codV, salV, impV, valVen, comi);
+
+                            System.out.println("Novo Vendedor Cadastrado com Sucesso!");
+
                         } else {
                             System.out.println("Opção inválida! Tente novamente.");
                         }
