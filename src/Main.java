@@ -96,8 +96,19 @@ public class Main {
                         }
                     } while (tipoEmpregado != 1 && tipoEmpregado != 2);
                     break;
-
-
+                case 3:
+                    for (Pessoa p : pessoas) {
+                        System.out.println(p.toString());
+                    }
+                    break;
+                case 4:
+                    for (Pessoa p : pessoas) {
+                        if (p instanceof Empregado) {
+                            Empregado emp = (Empregado) p;
+                            System.out.println("Funcionário: " + emp.getNome() + " | Salário a receber: R$ " + emp.calcularSalario());
+                        }
+                    }
+                    break;
             }
 
         } while (opcao != 0);
