@@ -30,13 +30,14 @@ public class Main {
                     String nomeF = input.nextLine();
                     System.out.print("Telefone: ");
                     int telF = input.nextInt();
-                    System.out.print("Valor da Dívida");
+                    System.out.print("Valor da Dívida: ");
                     float divida = input.nextFloat();
-                    System.out.println("Valor do Crédito");
+                    System.out.print("Valor do Crédito: ");
                     float credito = input.nextFloat();
                     input.nextLine();
 
                     Fornecedor fornecedor = new Fornecedor(nomeF, telF, divida, credito);
+                    pessoas.add(fornecedor);
 
                     System.out.println("Fornecedor Cadastrado com sucesso!");
                     break;
@@ -67,6 +68,7 @@ public class Main {
                             input.nextLine();
 
                             Operario operario = new Operario(nomeO, telO, codO, salO, impO, valorHoraO, horaO);
+                            pessoas.add(operario);
 
                             System.out.println("Novo Operário Cadastrado com Sucesso!");
 
@@ -88,6 +90,7 @@ public class Main {
                             double comi = input.nextDouble();
 
                             Vendedor vendedor = new Vendedor(nomeV, telV, codV, salV, impV, valVen, comi);
+                            pessoas.add(vendedor);
 
                             System.out.println("Novo Vendedor Cadastrado com Sucesso!");
 
