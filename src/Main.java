@@ -68,9 +68,9 @@ public class Main {
                             double salO = input.nextDouble();
                             System.out.print("Taxa de imposto: ");
                             double impO = input.nextDouble();
-                            System.out.println("Valor hora extra: ");
+                            System.out.print("Valor hora extra: ");
                             double valorHoraO = input.nextDouble();
-                            System.out.println("Total de horas extras: ");
+                            System.out.print("Total de horas extras: ");
                             int horaO = input.nextInt();
                             input.nextLine();
 

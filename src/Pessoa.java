@@ -31,10 +31,10 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "contador=" + contador +
-                ", nome='" + nome + '\'' +
-                ", telefone=" + telefone +
+        return "{" +
+                "Cadastros= " + contador +
+                ", nome= " + nome + '\'' +
+                ", telefone= " + telefone +
                 '}';
     }
 }
