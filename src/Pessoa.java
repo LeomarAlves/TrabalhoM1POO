@@ -13,10 +13,6 @@ public abstract class Pessoa {
         return contador;
     }
 
-    public void setContador(int contador) {
-        this.contador = contador;
-    }
-
     public String getNome() {
         return nome;
     }

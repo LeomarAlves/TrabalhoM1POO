@@ -20,7 +20,14 @@ public class Main {
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
 
-            opcao = input.nextInt();
+            try {
+                opcao = input.nextInt();
+            } catch (Exception e) {
+                System.out.println("Opção inválida! digite um número.");
+                opcao = -1;
+                input.nextLine();
+            }
+
             input.nextLine();
 
             switch (opcao){
